@@ -1,0 +1,706 @@
+Author - Adarsh Gupta, ©Sheryians Coding School Bhopal. v4.0
+					-- MODULE 1 --
+Day 1	--Installation of Java & Intellij IDEA
+	--IDE ? Integrated Development Environment
+	--Creating a new project in Intellij IDEA
+	--Exploring Settings of Intellij
+		--Font Size
+		--Theme
+		--Enabling zoom feature
+		--Auto Import
+	--Writing your first program
+		--main	public static void main(String[] args) { }
+		--sout	System.out.println();
+	--Running a Java program
+	--Comments
+		--Single Line // 
+		--Multi line /* comments */
+	--Understanding the need of a variable
+	--Intro to data types
+		--int - stores integers Ex - 1 2 3
+		--String - stores combination of characters Ex - "Shery"
+
+Day 2	--Variables 
+		--can contain Data or Object References (DTL)
+		--Variable declation, Initialization
+	--Role of + operator between String & numbers
+		--String + String = String - Concatenation
+		--String + int = String - Concatenation
+		--int + int = int - Arithmetic Addition
+	--Naming Convention for Class/Variable/Method name - identifiers
+		--Must start with an alphabet or _ or $
+		--Can end with a alphabet or _ or $ or numeric digit
+		--Spaces are not allowed
+		--No reserved keyword
+	--Java is CASE SENSITIVE
+	--Cases and Conventions for clean and readable code.
+		--PascalCase - Class & Interface
+		--camelCase  - variable and method name
+	--Game of brackets
+		--( ) - Methods                 - Parantheses
+		--{ } - Scope/body          - Curly
+		--[ ] - Array                     - Square
+		--<> - Generics                - Angular
+
+Day 3	--Literal or constant
+	--Data Types - Graphic
+		--Primitive or Pre-defined
+			--Integer  --why 4 ?
+				--byte, short, int, long( l or L suffix )
+				--Every Integer constant in java is int by default
+			--Floating Points
+				--Stop calling these decimal numbers
+				--float( suffix -  f or F ), double( suffix - d or D - Optional)
+				--Every floating constant in java is double by default
+			--Non Numeric 
+				--boolean, allowed values - true or false            
+				--char - UNICODE (ASCII is a subset of UNICODE)
+					--Range - 0 to 65,535
+					--char can hold a equivalent int value
+		--Non Primitive
+			--User defined or Custom data types
+			--Derived from Primitive data types
+			--String literals
+				--String name = "Shery"
+
+Day 4	--API - Application Programming Interface
+	--Reading Inputs from User
+	--Scanner Class
+		--Present inside java.util package
+		--Import Scanner class - import java.util.Scanner;
+		--Create Instance - Scanner sc = new Scanner(System.in);
+		--Standard Input, Output - STDIN, STDOUT
+		--Use methods to read respective data
+		--nextByte(), nextShort(), nextInt(), nextLong(), nextFloat(), nextDouble(), nextBoolean()
+		--Reading String Data
+			--nextLine() - Reads the whole line
+			--next()        - Reads the first word
+		--Reading char data
+			--nextLine().charAt(0)
+		--Problem with nextLine method
+			--If nextLine is used right after any scanner method then it will not work properly.
+			--Remember to use a dummy nextLine method after reading nextXYZ data 
+			   which will pick the newline character
+		--Introduction to JAVA DOCUMENTATION
+
+Day 5	--Operators in Java 
+		--Unary, Binary
+		--Arithmatic +, -, *, /, %, ++, --
+			--int/int will always yields int
+			--Modulo can work with int (works perfactly) as well as floats (produces unambiguity)
+			--Increment/Decrement operators can only be applied on variables, not on constants.
+			--Pre	++a
+			--Post       a++
+			--Special powers of / & % by powers of 10
+				--/ to reduce the number
+				--% to get last digit(s) of number
+		--Relational <, >, <=, >=, ==, !=
+			--These returns values in boolean - true or false
+		--Logical &&, ||, !
+			--Used to combine multiple conditions
+		--ShortHand operators
+		--Precedence and Associativity of Operators
+		--Rest to be covered later like bitwise and shift operators
+
+Day 6	--Control Flow Statements
+		--if(condition)
+			--executes its body if condition returns true
+			--works only on boolean values
+			--did not do anything if condition returns false
+
+		--if(condition) ... else
+			--executes body of if, if condition returns true otherwise executes else body
+			--else can't exist without if
+			--else do not have any condition
+
+		--if(condition) ... else if(condition)
+			--it is just a combitionation of the above two
+	
+		--if(condition) if(condition) if(condition) if(condition) - Aka if ladder
+			--Nothing but a combination if multiple independent if statements
+
+	--Package
+		--Creating a new package
+		--package statement should be the first line in the java code file
+		--Used to group a similar set of classes (code management)
+		--Default Library package imported by default in every Java class
+			java.lang.*
+	--Math class
+		--Present inside java.lang
+		--abs()
+		--floor()
+		--sqrt()
+		--cbrt()
+		--ceil()
+		--pow(double a, double b)
+		--round()
+		--max(double a, double b)
+		--min(double a, double b)
+
+Day 7	--MORE PROGRAMS ON IF ELSE
+		--Discount on Bill
+		--INR Denomination
+		--Weekdays of corresponding number
+		
+	--Ternary Operator
+		--<condition> ? true : false;
+	--Type Coversion or Type casting
+		--Implcit or Widening 
+			--order  byte->short->int->long->float->double
+		                          	char->int
+		--Expilicit or Narrowing
+			byte<-short<-int<-long<-float<-double
+			            short<-char<-int
+			--syntax
+				<data_type><var> = <data_type><var or val>;
+		--Type Promotion
+
+Day 8	--Loops   
+		--Need of loops in programming
+		--Types
+			--Entry Controlled
+			--Exit Controlled
+
+		--for(init; condition; incre/decre)
+			--Executes its body untill condition returns true
+			--Syntax tweaks
+				--Init outside loop
+				--multiple conditions
+				--incre/decre inside loop body
+			--Conditions for infinite for loop
+				--for(;;)
+				--for(;;);
+				--if condition never returns false
+Day 9	--while(conditions)
+		--Executes its body untill condition returns true
+		--Use it when the number of iterations are unknown
+		--Conditions for infinite while loop
+			--while(true)
+			--condition never returns false
+
+Day 10	--Nested Loops 
+		--Loop inside loop
+		--How to identify if nested loop is required ?
+	--Pattern Programming
+	--print() Vs println()
+	--Hackerrank
+
+Day 11	--DO ... WHILE(condition);
+		--Executes at least one time
+		--Don't forget to put semicolon after while
+		--Executes untill conditions returns false
+
+Day 12	--Switch statement
+		--Allowable data types - byte, short, char, int, String. (also wrapper classes of the same)
+			--Why not floating points ?
+				--Generates ambiguity (comparison is not perfact with floats)
+		--switch dont check each and every case. 
+		--multiple cases can be combined together
+		--Seperate multiple cases by commas.
+		--cant use the expressions as cases.
+			--Generates ambiguity
+		--every case must be unique.
+		--fall through - gir jana.
+		--switch table
+	--Java v14
+		--Reducing boilerplate using arrow functions
+		--No break statement required.	
+		--Switch Expression	
+			--yeild keyword 
+
+					-- MODULE 2 --
+Day 13	--Arrays Data Structure
+		--Need
+		--Architecture
+		--One D array
+			--Different ways of initialization
+				--with new keyword
+					--With size	
+						--int[] arr = new int[size]
+					--Without size
+						--int[] arr = new int[]{1, 2, 3}
+						--size and init can't be done together
+				--without new keyword
+					--int[] arr = {1, 2, 3}
+
+			--Default values of array element
+				integers - 0
+				floats - 0.0
+				char - null character, unicode - '\u0000'
+				boolean - false
+				non-primitives - null
+
+
+Day 14	--Programs on array
+
+Day 15	--Enhanced for loop
+	--Searching
+		--Linear Search
+		--Binary Search 
+	--Sorting
+		--Bubble Sort
+
+Day 16	--Multi D Arrays
+		--2D/Matrix, 3D Array
+			--Array of Array References
+			--Memory structure 
+			--Matrix form of 2D array
+				--Initialization
+					--With new keyword
+					--With constant values
+				--Programs
+					--Traversing / Visiting each index of array
+					--Taking inputs
+					--Displaying elements of array in matrix form
+					--Sum of Digonals
+		--Jagged Arrays
+			--Must provide the size of first dimension
+			--Importance of length property in traversing
+
+		--ArrayIndexOutOfBoundsException
+		--NullPointerException
+
+Day 17	--Methods	
+		--Method Signature / Method Prototype / Method Definition
+		--Need of methods
+		--Method types 
+			--static             
+				--Invoke by class name
+			--instance / factory method / non static    
+				--Invoke by object's reference
+		--Programs
+			--Factorial
+			--Prime Number*
+			--Strong Number
+				--145 = 1! + 4! + 5!
+			--Armstrong Number
+				--153 = 1^3 + 5^3 + 3^3
+			--Special Number
+				--109 = 1 + 0 + 9 = 10 = 1 + 0 = 1 	
+	
+Day 18	--Arguments
+		--Formal Arguments 
+		--Actual arguments
+	--Arguments Passing
+		--Pass by value
+	--Passing Array Objects.
+	--Leetcode 
+	--varargs 
+		--exactly three dots (...)
+		--variable length arguments
+		--there can be only one varargs in a method
+		--if there are other parameters then varargs must be declared in the last.
+
+Day 19	--Object Oriented Programming Part 1
+		--Relation bw Class, Object  & Constructor
+			--Class is prototype, object a real thing
+			--Class is a blueprint of building, object is building itself
+			--Constructor runs only once after object creation
+		--Class
+			--Class can have attributes(variables) and behavior(methods)
+			--How will you store the information of a student 
+				--Custom data types
+			--Instance fields / Data members
+			--Keep the data members of class private
+			--Factory methods
+		--Object
+			--Creating an Object
+				<Class name> ref = new <any constructor of Class>
+			--Object has state(instance fields) & behaviour(methods)
+		--Constructor
+			--Executes at the time of object creation
+			--Main purpose is to initialize the instance fields
+			--Default Constructor
+			--Para Constructor
+				--this keyword
+					--Points to current calling object
+			--Rules and Properties.   
+				--Same name as class name, 
+				--when an object is created with new keyword, the constructer is called.
+				--called only once in object lifecycle at object creation 
+				--No return type. 
+				--can not made static.
+				--What happen if we provide it a return type 
+				--It will become an ordinary java method and will not be called at object creation.
+Day 20	--Making a Model
+		--Data Containers
+		--Getters
+		--Setters
+		--toString()
+		--Data members of a class must be private. 
+	--Making a class read only
+	--Array of Objects
+		Program to Store the data of 5 students and print them
+	--Overloading
+		--Rules(By following any of given rules we can achieve overloading).
+			--Number of agrs must be different
+			--Data type of one or more args must be differnt.
+			--Order of args must be different
+		--Compile time polymorphism
+		--Early binding
+		--Constructor overloading
+		--Method Overloading
+
+Day 21	--Understanding behind the scenes
+		--JDK, JRE, JVM
+		--Platform Indepent
+			--Java bytecode
+		--Command Line
+			--cd, cd.., cls, dir, mkdir, rmdir, tree, ping
+		--Running Java program via cmd
+			--In case of single java class
+				java FileName.java
+			--In case of multiple classes
+				javac FileName.java
+				java MainClassName
+
+Day 22	--String API  
+		--array of characters.
+		--Strings instances are immutable that is they can not be changed, however if u try to change the 
+		   value a new instance/object will be created in the memory.
+		--Strings literals
+			--String name = "Adarsh";
+			--Using this method, they gets generated in the special memory location called 
+			   String Constants pool inside heap(architecture).
+			--Why immutable ?
+		--String Constructor
+			--String name = new String( "Adarsh" );
+			--Gets generated inside heap but points to different objects.(architecture)	
+		--String Methods
+		--Comparing Strings
+			--Avoid using == operator
+			--Using equals(), compareTo()
+
+Day 23	--StringBuilder API
+		--Mutable String Objects
+		--Default capacity - 16 characters.
+		--Constructors
+			--StringBuilder() - 16 characters capacity 
+			--StringBuilder(int n) - N characters capacity 
+			--StringBuilder(String str) - Length of str + 16 characters capacity
+		--Important Methods
+		--When to choose StringBuilder
+			--In case of too many manupulations on String Objects
+
+Day 24	--Wrapper Classes
+		--Autoboxing
+		--Unboxing
+		--Useful Methods
+		--Parsing Strings
+		--Useful in Collection framework and other APIs
+
+	--BufferedReader API
+		--InputStreamReader
+		--Reading data through BufferedReader 
+		--readLine()
+		--Parse Strings into respective data type
+		--Why BufferedReader
+
+Day 25	--ArrayList API
+		--Lists - ArrayList - Kind of Dynamic Array
+		--Default Capacity is 10 
+		--Can store duplicates and null values
+		--ArrayList stores Objects
+		--Autoboxing & Unboxing in ArrayList
+		--Creating an ArrayList
+			ArrayList<TYPE> ref = new ArrayList<>();
+		--Important Methods
+			--add(E e), add(int index, E e),   
+			--clear()
+			--remove(int index) - remove from particular index.
+			--remove(Object obj) - remove first matched object.
+			--forEach()  ex-   ref.forEach((n) -> sout(n));
+			--contains(Object obj)  -returns true if the element found.
+			--set(int index, E element)
+			--get(int index)
+			--subList(int from, int to);
+			--size()
+			--indexOf(Object obj)
+
+					-- MODULE 3 --
+
+Day 27	--More about object reference
+		--null value
+		--lifetime
+		--GC
+		--How object are destroyed in java - automatically by GC
+	--static
+		--static keyword also a non-access specifier/modifier
+		--variables
+			--syntax, default value.
+			--can only be declared globally.
+			--gets loaded into memory with the first use of class.
+			--there will be only one copy for all the objects.(Sharing of data)--Diagram
+			--they can be accessed by instance methods directly. -- non static
+			--they are associated with the class not with the objects.
+		--methods
+			--they can be directly accessed by the other static method.
+			--can only be called by class name. 
+			--if tried to call via object then reference name will be replaced by class name.
+			--they can  be referenced by a non static method -- vice versa is not possible
+			--they can only access the static data.
+			//Constructor can not be static beacuse they are called at object creation.	
+		--static blocks
+			--syntax
+			--Automatically Executed only once, right when the class is first used.
+			--First use of class can be a object creation or the static call.
+			--can be used multiple times.
+			--Hierarchy will be followed
+		--Initializer block
+			--syntax
+			--Automatically executed only once, right before the constructor for each object
+			--can be used multiple times.
+			--Hierarchy will be followed
+	
+Day 28	--Stack Memory
+		--Properties	
+			--Special region in the ram
+			--Works on stack data structure
+			--holds active functions and local variables 
+			--push and pop
+			--another function call 
+			--fast access
+			--small size
+		--How function get called ?
+			--multiple fn call - stack diagram
+		--What exactly the return statement is ?
+		
+	--Heap Memory
+		--Special region in RAM
+		--Large in size
+		--may become fragmented
+		--stores objects
+		--not based on heap data structure
+ 		--object creation - diagram
+
+	--Recursion
+		--Process by which a problem depends on solutions to smaller instances of same prob
+		--Problem keeps on breaking untill the base case hits
+		--Uses extra space for recursive calls
+		--Recursive leap of faith
+
+Day 29	--Recursion Problems
+	--Sum of first n natural numbers
+		--stack diagram
+			--backtracking
+		--iterartive(tough) vs recursion(easy to think)	
+	Fibonacci Numbers
+		--Dividing the problem into smaller instances of same prob
+		--Reccurance relation
+		--Recursion Tree	
+
+Day 30	--Inheritance 
+		--Provides reusability of code
+		--super class or base class or parent class.
+		--sub class or derived class or child class.
+		--single level
+		--multilevel
+		--Hierarchical
+		--Let's see in code
+		--Multiple, Hybrid - Unsupported in JAVA
+			--What are they and Why unsupported ?
+		--there can be only one superclass
+		--the Object class. - Cosmic Superclass
+
+Day 31	--this keyword
+		--constructor chaining
+	--super keyword
+		--Similar to this keyword but used to access Parent's data & methods from child class
+		--Accessing data members of base class { providing same name }
+		--Accessing the methods of base class { providing same method signature }
+		
+	--Super and Constructor chaining	
+		--If we do not call the Superclass cons. by ourself then compiler will automatically call 
+		   non-parameterized deafult cons of Superclass. & if we dont have such a cons. in Superclass then
+		   it will throw an error.
+		--It means that, in our normal classes when we were creating cons. , the baseClass cons(the Object
+		   class) was automatically being called by compiler.
+
+	--Method overriding
+		--It is a technique by which child class can assign a new implementation for the parent's method
+		--syntax   --same method signature
+
+	--Relation between super class and sub class objects and refernces.
+		--we can not refer to super's obj via sub's ref but vice-versa is possible.
+
+	--method hiding
+		--when try to override a static method it is known as method hiding
+
+Day 32	--Packages
+	--Access Modifiers.
+		--default - package level
+		--private - class level
+		--public - global level
+		--protected 
+			--with in package
+			--outside package - only child class && only using the child class ref
+	--Final keyword
+		--It is one of the modifiers, and can be prefixed with a variable, method or a class.
+		--Variables
+			--Used to create constants.
+			--Since they are constants must be initialized at the time of declation.
+			--can be initialized in cons and as well as inside static block 
+			--If not initialized then it is known as blank final variable
+		--Methods
+			--final methods can not be overridden
+		--Classes
+			--they cant be Inherited
+			--If we declare a class to be final then all the methods of this class will be final excepts 
+			   variables.
+
+Day 33	--Abstraction
+		--Unimplemented or Semi implementation
+	--Abstract methods
+		--must have a abstract keyword in declaration
+		--Abstract methods forces the class to be abstract.
+		--Abstract method do not hv any body.
+		--The derived class of an abstract class must override anstract methods of it. 
+			OR 
+		   Derived can also made abstract if dont want to override abstract methods
+		--Private methods can not be abstract otherwise we can not override them.
+		--Static methods can not be overridden because they are not part of the object's state. 
+		   Rather, they belongs to the class
+	
+	--Abstract class
+		--can be made without having an abstract method.
+		--only abstract keyword is required.
+		--can have final methods.
+		--Abstract classes are uninstantiable - It means we cant create object of abstract class;
+		--They can have constructors
+			--when the cons will be called ? 
+				--when an object of the child class is created.	
+					--Constructor chaining up to Object's constructor
+Day 34	--Interfaces - can acheive total abstraction and muplitple inheritance
+		--Interface define contracts, which implementing classes need to honor.
+		--syntax
+		--By default all methods are public and abstract	
+		--It means thats methods can only be declared.
+		--implements keyword
+
+	--Extends & Implements keyword
+		--We can extends and implements at the same time 
+		--Implements will come after extends because any number of interfaces can be implemented 
+		   but only one class can be inherited
+                 
+                -- A class that implements an interface must implement all the methods declared in the interface
+
+	--inheritace between class-class, class-interface, interface-interface
+
+	--Default methods in interface ( added in java 8 )
+		--syntax 
+			--default <access spec> <method name>
+
+	--Static methods are also added in java 8 , they can be called only by interface name.
+
+Day 35	--Exception Handling
+		--Helps in defining robustness in java
+		--API Heirarchy for Exceptions
+		--Types
+			--Unchecked
+				--Thrown at Runtime
+			--checked
+				--must be handled at compile time
+		--Keywords
+			--try
+			--catch
+			--finally
+				--the major use of finally is resource de-allocation
+			--throw
+			--throws
+		--printing exceptions
+			--obj.toString() 
+			--obj.printStackTrace() 
+			--obj.getMessege() -only cause
+
+Day 36	--File API
+		--How to create a file?
+		--File constructor 
+			--File(String path)
+				--File file = new File("lab.txt");
+		
+		--createNewFile()
+			--works on ref of file and create the new file at the path.
+			--return true if the file is not present at the path
+			--returns false if the file is already present
+		--int comapareTo(File path) --compare two filepaths lexicographically
+		--boolean delete() --deletes the file
+		--boolean exists() -- tells whether the file is present or not
+		--String getName()
+		--String getPath()
+		--boolean isDirectory()
+		--boolean isFile()
+		--long length()
+		--boolean mkdir()
+
+	--FileWriter class
+		--constructor
+			--FileWriter(File reference)
+		--void write()
+		--void flush()
+		--void close() -- flush the stream and saves the data
+
+	--FileReader
+		--constructor
+			--FileReader(File reference)
+		--int read() 
+			--returns -1 at the end of stream
+		--void close()
+
+Day 37	--Mini Project
+
+Day 38	--HashSet, HashMap
+		--Syntax
+		--Problems
+
+bitwise , number system, programs, equals, hashcode methods, day 21
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
